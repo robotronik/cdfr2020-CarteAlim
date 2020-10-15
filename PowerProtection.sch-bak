@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -30,13 +30,7 @@ Wire Wire Line
 	8750 3450 8750 3550
 Wire Wire Line
 	9100 3450 9100 3550
-Wire Wire Line
-	9450 3450 9450 3550
 Connection ~ 9100 3050
-Wire Wire Line
-	9450 3050 9450 3150
-Wire Wire Line
-	9100 3050 9450 3050
 Connection ~ 8750 3050
 Wire Wire Line
 	9100 3050 9100 3150
@@ -71,32 +65,6 @@ F 2 "" H 9100 3950 50  0001 C CNN
 F 3 "" H 9100 3950 50  0001 C CNN
 	1    9100 3950
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F823109
-P 9450 3550
-AR Path="/5F823109" Ref="#PWR?"  Part="1" 
-AR Path="/5F802FB9/5F823109" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 9450 3300 50  0001 C CNN
-F 1 "GND" H 9455 3377 50  0000 C CNN
-F 2 "" H 9450 3550 50  0001 C CNN
-F 3 "" H 9450 3550 50  0001 C CNN
-	1    9450 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5F82310F
-P 9450 3300
-AR Path="/5F82310F" Ref="D?"  Part="1" 
-AR Path="/5F802FB9/5F82310F" Ref="D2"  Part="1" 
-F 0 "D2" V 9404 3379 50  0000 L CNN
-F 1 "D" V 9495 3379 50  0000 L CNN
-F 2 "LIB_BE_PHELMA_CMS:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9450 3300 50  0001 C CNN
-F 3 "~" H 9450 3300 50  0001 C CNN
-	1    9450 3300
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED D?
@@ -150,11 +118,8 @@ F 3 "~" H 8400 3050 50  0001 C CNN
 	1    8400 3050
 	0    -1   -1   0   
 $EndComp
-Connection ~ 9450 3050
 Text HLabel 10050 3050 2    50   Output ~ 0
 ProtectedPowerOut+
-Wire Wire Line
-	9450 3050 10050 3050
 $Comp
 L Relay:G6SK-2 K1
 U 1 1 5F83DBFF
@@ -270,14 +235,6 @@ F 3 "" H 4100 4500 50  0001 C CNN
 $EndComp
 Text HLabel 4150 4100 2    50   Input ~ 0
 BatteryPowerIn-
-$Sheet
-S 4900 2900 2200 900 
-U 5FBB308A
-F0 "XavProtec" 50
-F1 "XavProtec.sch" 50
-F2 "vin" I L 4900 3050 50 
-F3 "vout" O R 7100 3050 50 
-$EndSheet
 Wire Wire Line
 	3600 4100 4150 4100
 $Comp
@@ -307,10 +264,6 @@ F 3 "" H 10050 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2250 3050 4900 3050
-Wire Wire Line
-	7100 3050 8250 3050
-Wire Wire Line
 	10100 4100 10050 4100
 Wire Wire Line
 	2500 4600 3000 4600
@@ -318,4 +271,96 @@ Wire Wire Line
 	3600 4700 4100 4700
 Wire Wire Line
 	3600 4500 4100 4500
+$Comp
+L Transistor_FET:IRF7606PBF Q?
+U 1 1 5F88E169
+P 5900 3150
+AR Path="/5F88E169" Ref="Q?"  Part="1" 
+AR Path="/5F898EC7/5F88E169" Ref="Q?"  Part="1" 
+AR Path="/5F802FB9/5FBB308A/5F88E169" Ref="Q?"  Part="1" 
+AR Path="/5F802FB9/5F88E169" Ref="Q1"  Part="1" 
+F 0 "Q1" V 6242 3150 50  0000 C CNN
+F 1 "IPB110P06LM" V 6151 3150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 6100 3075 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB110P06LM-DS-v02_00-EN.pdf?fileId=5546d46269e1c019016a03e2d06000ae" V 5900 3150 50  0001 L CNN
+	1    5900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5F88E16F
+P 6250 3250
+AR Path="/5F88E16F" Ref="D?"  Part="1" 
+AR Path="/5F898EC7/5F88E16F" Ref="D?"  Part="1" 
+AR Path="/5F802FB9/5FBB308A/5F88E16F" Ref="D?"  Part="1" 
+AR Path="/5F802FB9/5F88E16F" Ref="D8"  Part="1" 
+F 0 "D8" V 6204 3330 50  0000 L CNN
+F 1 "10V" V 6295 3330 50  0000 L CNN
+F 2 "" H 6250 3250 50  0001 C CNN
+F 3 "~" H 6250 3250 50  0001 C CNN
+	1    6250 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F88E175
+P 5900 3700
+AR Path="/5F88E175" Ref="R?"  Part="1" 
+AR Path="/5F898EC7/5F88E175" Ref="R?"  Part="1" 
+AR Path="/5F802FB9/5FBB308A/5F88E175" Ref="R?"  Part="1" 
+AR Path="/5F802FB9/5F88E175" Ref="R7"  Part="1" 
+F 0 "R7" H 5970 3746 50  0000 L CNN
+F 1 "10k" H 5970 3655 50  0000 L CNN
+F 2 "" V 5830 3700 50  0001 C CNN
+F 3 "~" H 5900 3700 50  0001 C CNN
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3450 5900 3450
+Wire Wire Line
+	5900 3450 5900 3350
+Wire Wire Line
+	5900 3450 5900 3550
+Connection ~ 5900 3450
+$Comp
+L power:GND #PWR?
+U 1 1 5F88E180
+P 5900 3950
+AR Path="/5F88E180" Ref="#PWR?"  Part="1" 
+AR Path="/5F898EC7/5F88E180" Ref="#PWR?"  Part="1" 
+AR Path="/5F802FB9/5FBB308A/5F88E180" Ref="#PWR?"  Part="1" 
+AR Path="/5F802FB9/5F88E180" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 5900 3700 50  0001 C CNN
+F 1 "GND" H 5905 3777 50  0000 C CNN
+F 2 "" H 5900 3950 50  0001 C CNN
+F 3 "" H 5900 3950 50  0001 C CNN
+	1    5900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3850 5900 3950
+Wire Wire Line
+	6250 3400 6250 3450
+Wire Wire Line
+	6100 3050 6250 3050
+Wire Wire Line
+	6250 3100 6250 3050
+Connection ~ 6250 3050
+Wire Wire Line
+	2250 3050 5700 3050
+Wire Wire Line
+	6250 3050 8250 3050
+Wire Notes Line
+	5350 2650 5350 4300
+Wire Notes Line
+	5350 4300 6500 4300
+Wire Notes Line
+	6500 4300 6500 2650
+Wire Notes Line
+	6500 2650 5350 2650
+Text Notes 5350 4400 0    50   ~ 0
+Reverse polarity protection
+Wire Wire Line
+	9100 3050 10050 3050
 $EndSCHEMATC
