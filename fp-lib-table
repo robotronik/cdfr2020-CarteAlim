@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name LIB_BE_PHELMA)(type KiCad)(uri ${KIPRJMOD}/LIB_BE_PHELMA.pretty)(options "")(descr ""))
+  (lib (name LIB_BE_PHELMA_CMS)(type KiCad)(uri ${KIPRJMOD}/LIB_BE_PHELMA_CMS.pretty)(options "")(descr ""))
+)
