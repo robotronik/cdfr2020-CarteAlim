@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -780,7 +780,7 @@ Wire Wire Line
 	3350 5500 2950 5500
 Connection ~ 3350 5500
 $Sheet
-S 4250 1050 1800 1450
+S 4250 1050 1800 1600
 U 5F802FB9
 F0 "PowerProtection" 50
 F1 "PowerProtection.sch" 50
@@ -791,7 +791,7 @@ F5 "ProtectedPowerOut-" O R 6050 1950 50
 F6 "BalanceGND" I L 4250 1650 50 
 F7 "BalanceCell2" I L 4250 1450 50 
 F8 "Buzzer+" I L 4250 2300 50 
-F9 "Buzzer-" I L 4250 2400 50 
+F9 "Buzzer-" I L 4250 2500 50 
 $EndSheet
 Wire Wire Line
 	4050 1250 4250 1250
@@ -833,18 +833,18 @@ Wire Wire Line
 	3100 1350 3150 1350
 Wire Wire Line
 	3100 1550 3350 1550
-Text Notes 1400 3200 1    50   ~ 0
+Text Notes 1400 3000 1    50   ~ 0
 Battery bipper buzzer
 $Comp
 L Device:Buzzer BZ1
 U 1 1 5F94563A
-P 1700 2600
-F 0 "BZ1" H 1705 2275 50  0000 C CNN
-F 1 "Buzzer" H 1705 2366 50  0000 C CNN
-F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 1675 2700 50  0001 C CNN
-F 3 "~" V 1675 2700 50  0001 C CNN
-	1    1700 2600
-	-1   0    0    1   
+P 1700 2400
+F 0 "BZ1" H 1705 2075 50  0000 C CNN
+F 1 "Buzzer" H 1705 2166 50  0000 C CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 1675 2500 50  0001 C CNN
+F 3 "~" V 1675 2500 50  0001 C CNN
+	1    1700 2400
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1900 2100 3450 2100
@@ -870,12 +870,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 1650 3100 1650
 Wire Wire Line
-	4250 2300 2900 2300
-Wire Wire Line
-	2900 2300 2900 2500
-Wire Wire Line
-	2900 2500 1800 2500
-Wire Wire Line
 	1900 1300 1900 1400
 Wire Wire Line
 	1900 1400 1900 1500
@@ -899,10 +893,6 @@ F 3 "~" H 3800 1850 50  0001 C CNN
 	1    3800 1650
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3800 2700 3800 2400
-Wire Wire Line
-	3800 2400 4250 2400
 Text Notes 3050 2250 0    50   ~ 0
 Reset if battery went too low
 Text GLabel 4850 3500 0    50   Input ~ 0
@@ -943,8 +933,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 1650 3450 1650
 Connection ~ 3450 1650
-Wire Wire Line
-	1800 2700 3800 2700
 Wire Wire Line
 	10200 3000 10250 3000
 Wire Wire Line
@@ -999,4 +987,8 @@ Text GLabel 1750 4200 3    50   Input ~ 0
 18V
 Wire Wire Line
 	1750 4100 1750 4200
+Wire Wire Line
+	1800 2300 4250 2300
+Wire Wire Line
+	1800 2500 4250 2500
 $EndSCHEMATC
