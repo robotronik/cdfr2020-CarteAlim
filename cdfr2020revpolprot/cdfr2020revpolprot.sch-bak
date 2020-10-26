@@ -1,0 +1,101 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5F88C80C
+P 2500 2450
+F 0 "J1" H 2392 2217 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 2392 2216 50  0001 C CNN
+F 2 "" H 2500 2450 50  0001 C CNN
+F 3 "~" H 2500 2450 50  0001 C CNN
+	1    2500 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F88D5FC
+P 2700 2550
+F 0 "#PWR0101" H 2700 2300 50  0001 C CNN
+F 1 "GND" H 2705 2377 50  0000 C CNN
+F 2 "" H 2700 2550 50  0001 C CNN
+F 3 "" H 2700 2550 50  0001 C CNN
+	1    2700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2450 2700 2550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F896000
+P 2800 2350
+F 0 "#FLG0101" H 2800 2425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 2523 50  0000 C CNN
+F 2 "" H 2800 2350 50  0001 C CNN
+F 3 "~" H 2800 2350 50  0001 C CNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2350 2700 2350
+$Sheet
+S 3350 2300 500  400 
+U 5F898EC7
+F0 "rpp" 50
+F1 "revpolprot.sch" 50
+F2 "vin" I L 3350 2350 50 
+F3 "vout" O R 3850 2350 50 
+$EndSheet
+Wire Wire Line
+	2800 2350 3350 2350
+Connection ~ 2800 2350
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5F8A1CE5
+P 4650 2450
+F 0 "J2" H 4622 2332 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 4622 2423 50  0000 R CNN
+F 2 "" H 4650 2450 50  0001 C CNN
+F 3 "~" H 4650 2450 50  0001 C CNN
+	1    4650 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 2350 3850 2350
+$Comp
+L power:GND #PWR0102
+U 1 1 5F8A320A
+P 4450 2550
+F 0 "#PWR0102" H 4450 2300 50  0001 C CNN
+F 1 "GND" H 4455 2377 50  0000 C CNN
+F 2 "" H 4450 2550 50  0001 C CNN
+F 3 "" H 4450 2550 50  0001 C CNN
+	1    4450 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2450 4450 2550
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F8A4246
+P 2700 2450
+F 0 "#FLG0102" H 2700 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2700 2623 50  0000 C CNN
+F 2 "" H 2700 2450 50  0001 C CNN
+F 3 "~" H 2700 2450 50  0001 C CNN
+	1    2700 2450
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

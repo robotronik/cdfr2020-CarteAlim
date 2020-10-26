@@ -1,5 +1,7 @@
 (sym_lib_table
   (lib (name dsn2596)(type Legacy)(uri ${KIPRJMOD}/dsn2596.lib)(options "")(descr ""))
   (lib (name 2)(type Legacy)(uri ${KIPRJMOD}/2.lib)(options "")(descr ""))
-  (lib (name DSP1A-L2-DC5V)(type Legacy)(uri E:/Documents/Robo/cdfr2020-CarteAlim/DSP1A-L2-DC5V.lib)(options "")(descr ""))
+  (lib (name DSP1A-L2-DC5V)(type Legacy)(uri ${KIPRJMOD}/DSP1A-L2-DC5V.lib)(options "")(descr ""))
+  (lib (name Transistor_FETvBwouf)(type Legacy)(uri ${KIPRJMOD}/Transistor_FETvBwouf.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/SamacSys_Parts.lib)(options "")(descr ""))
 )

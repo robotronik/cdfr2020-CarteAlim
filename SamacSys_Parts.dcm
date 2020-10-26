@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP DSP1A-L2-DC5V
+D General Purpose Relays 8A 5VDC SPST 2 COIL LATCHING PCB
+K
+F https://componentsearchengine.com/Datasheets/1/DSP1A-L2-DC5V.pdf
+$ENDCMP
+#
+#End Doc Library
