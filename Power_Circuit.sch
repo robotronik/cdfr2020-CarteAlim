@@ -844,7 +844,7 @@ F 1 "Buzzer" H 1705 2166 50  0000 C CNN
 F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 1675 2500 50  0001 C CNN
 F 3 "~" V 1675 2500 50  0001 C CNN
 	1    1700 2400
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1900 2100 3450 2100
@@ -990,7 +990,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 2300 4250 2300
 Wire Wire Line
-	1800 2500 4250 2500
+	1800 2500 2050 2500
 $Comp
 L Switch:SW_SPST SW2
 U 1 1 5F8A3132
@@ -1015,17 +1015,6 @@ F 3 "~" V 1725 3050 50  0001 C CNN
 	1    1750 2950
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5FB60BCF
-P 2050 2850
-F 0 "#PWR0102" H 2050 2600 50  0001 C CNN
-F 1 "GND" H 2055 2677 50  0000 C CNN
-F 2 "" H 2050 2850 50  0001 C CNN
-F 3 "" H 2050 2850 50  0001 C CNN
-	1    2050 2850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2050 2850 1850 2850
 $Comp
@@ -1041,4 +1030,9 @@ F 3 "" H 2050 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2050 3050 1850 3050
+Wire Wire Line
+	2050 2850 2050 2500
+Connection ~ 2050 2500
+Wire Wire Line
+	2050 2500 4250 2500
 $EndSCHEMATC
