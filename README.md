@@ -2,6 +2,8 @@
 
 - [Carte alimentation du robot 2020](#carte-alimentation-du-robot-2020)
   - [Changelog](#changelog)
+    - [Commits](#commits)
+    - [Versions du projet](#versions-du-projet)
   - [Protection de la batterie](#protection-de-la-batterie)
     - [Protection contre la décharge](#protection-contre-la-décharge)
     - [Protection contre une inversion de la polarité](#protection-contre-une-inversion-de-la-polarité)
@@ -12,10 +14,21 @@
   - [Taille des pistes](#taille-des-pistes)
 
 ## Changelog
+### Commits
+|Date|Nom du commit|Version du projet|
+|---|---|---|
+| 26/10/2020 | Fin du schema et routage
+| 26/10/2020 | Changement pour ajouter la possibiliter de court circuiter les 2 buzzers ou 1|v1
+| 27/10/2020 | Readme propre | Ajout du README
+| 27/10/2020 | Sans regul moteurs et fix du reste |v2 bis
 
-26/10/2020 - Fin du schema et routage
-26/10/2020 - Changement pour ajouter la possibiliter de court circuiter les 2 buzzers ou 1
-27/10/2020 - Ajout du README
+### Versions du projet
+|Version|Description|
+|---|---|
+|v1| Le routage est fait avec 0.5mm partout, pas de plan de masse, mauvaise empreinte pour le transistor, mauvais noms de sorties (n'indiquent pas clairement la tension)|
+|v2 *| Largeur de piste tenant compte de l'intensité pouvant passer, bonne empreinte du transistor, bons noms de sortie
+|v2 bis| Sorties moteurs dérégulées : elles sont "directement" reliées à la batterie|
+
 
 ## Protection de la batterie
 
