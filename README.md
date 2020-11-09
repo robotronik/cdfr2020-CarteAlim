@@ -20,7 +20,8 @@
 | 26/10/2020 | Fin du schema et routage
 | 26/10/2020 | Changement pour ajouter la possibiliter de court circuiter les 2 buzzers ou 1|v1
 | 27/10/2020 | Readme propre | Ajout du README
-| 27/10/2020 | Sans regul moteurs et fix du reste |v2 bis
+| 27/10/2020 | Sans regul moteurs et fix du reste |v2 bis 
+| 10/11/2020 | Avec regul moteurs et texte sur autre couche | v2 (avec plan de masse)
 
 ### Versions du projet
 |Version|Description|
@@ -39,11 +40,10 @@ Un bipper de batterie est relié à la carte.\
 Ses buzzers sont remplacés par un relais qui coupe la partie négative de la batterie (celle-ci ne peut donc plus se décharger).\
 Attention le relais prévu a une alimentation de 5V max, il y a donc possibilité de mettre un pont diviseur de tension ou une diode (si cela suffit) pour réduire la tension aux bornes de Coil2 (celle issu\
 
-    /!\ Lors du branchement de la batterie, le bipper "bip" usuellement, ici ça se traduit par une coupure du relais. Il faut réactiver l'utilisation de la batterie.
-
-**Pour réactiver l'utilisation de la batterie** : 
-- S'assurer qu'elle est chargée à un niveau suffisant
-- Appuyer sur le bouton SW1 (reset du relais)
+><u>__/!\\__</u> Lors du branchement de la batterie, le bipper "bip" usuellement, ici ça se traduit par une coupure du relais. Il faut réactiver l'utilisation de la batterie.<br>
+>**Pour réactiver l'utilisation de la batterie** : 
+>- S'assurer qu'elle est chargée à un niveau suffisant
+>- Appuyer sur le bouton SW1 (reset du relais)
 
 ### Protection contre une inversion de la polarité
 
@@ -61,13 +61,13 @@ Fait-il office de protection contre les surcharges ? (à la place d'un fusible)
 *Puisque le bouton d'arrêt d'urgence doit arrêter tout mouvement du robot, celui-ci n'est relié qu'à la partie actionneurs.*
 
 ### Table des fusibles
-|Sortie         |Fusible|
-|---            |---|---|
-|Cmd-5V         |   |
-|Cmd-7V5        |   |
-|Motor1-12V     |   |
-|Motor1-12V     |   |
-|Actuator-5V    |   |
+|Sortie         |Fusible (valeur estimée approximativement)|
+|---            |---|
+|Cmd-5V         | 1A  |
+|Cmd-7V5        | 1A  |
+|Motor1-12V     | 2A  |
+|Motor1-12V     | 2A  |
+|Actuator-5V    | 2A  |
 
 
 ## Taille des pistes
