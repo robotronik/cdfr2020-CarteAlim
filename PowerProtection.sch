@@ -241,7 +241,7 @@ U 1 1 5F9E94BA
 P 5900 3150
 F 0 "Q1" V 6243 3150 50  0000 C CNN
 F 1 "IRF7606PBF_3PINS_BWOUF" V 6152 3150 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 6100 3075 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 6100 3075 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf7606pbf.pdf" V 5900 3150 50  0001 L CNN
 	1    5900 3150
 	0    -1   -1   0   
@@ -281,8 +281,6 @@ Wire Notes Line
 	2550 3150 4800 3150
 Wire Wire Line
 	2700 3900 2250 3900
-Text Notes 2550 5200 0    50   ~ 0
-Use a diode/resistor to reduce the voltage,\nas the relay is rated 5V but \nthe voltage from the cell is 7.5V\n
 Wire Wire Line
 	4650 3800 4600 3800
 $Comp
@@ -352,4 +350,6 @@ Wire Wire Line
 Connection ~ 3050 3900
 Wire Wire Line
 	3050 3900 3100 3900
+Text Notes 2550 5200 0    50   ~ 0
+Use a diode/resistor to reduce the voltage,\nas the relay is rated 5V but \nthe voltage from the cell is 7.5V\n
 $EndSCHEMATC
