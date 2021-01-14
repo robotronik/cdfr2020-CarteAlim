@@ -798,7 +798,7 @@ Text Notes 3050 2250 0    50   ~ 0
 Reset if battery went too low
 Text GLabel 4850 3500 0    50   Input ~ 0
 18V_Battery
-Text GLabel 2550 5500 0    50   Input ~ 0
+Text GLabel 2950 5500 0    50   Input ~ 0
 18V_Battery
 Wire Wire Line
 	5350 3500 4850 3500
@@ -875,19 +875,6 @@ Wire Wire Line
 	1800 2300 4250 2300
 Wire Wire Line
 	1800 2500 2050 2500
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5F8A3132
-P 2750 5500
-F 0 "SW2" H 2750 5735 50  0000 C CNN
-F 1 "SW_STARTER" H 2750 5644 50  0000 C CNN
-F 2 "LIB_BE_PHELMA:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2750 5500 50  0001 C CNN
-F 3 "~" H 2750 5500 50  0001 C CNN
-	1    2750 5500
-	1    0    0    -1  
-$EndComp
-Text Notes 2500 5200 0    50   ~ 0
-Cord starter
 $Comp
 L Device:Buzzer BZ2
 U 1 1 5FB3C6D2
